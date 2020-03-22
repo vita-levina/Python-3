@@ -1,0 +1,19 @@
+while True:
+    print("insert the type of operation and 2 variables")
+
+    a = input("Enter the type of operation: ")
+    b = float(input("Enter the number: "))
+    c = float(input("Enter another number: "))
+    
+    if a == "add"  :
+       result = b + c
+    elif a == "multiply" :
+        result = b * c
+    elif a == "substract" :
+        result = b - c
+    elif a == "divide" :
+        result = b / c
+    else:
+        print("Please insert the other type of operation")
+    print("the result is " + str(result))
+    break
