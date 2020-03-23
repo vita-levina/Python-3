@@ -1,0 +1,36 @@
+def add (x, y):
+  print(x + y)
+def div (x, y):
+  print(x / y)
+def mult (x, y):
+  print(x * y)
+def subst (x, y):
+  print(x - y)
+
+OperationsList = [1,2,3,4]
+
+type_input = input("""Please insert the number corresponding to type of operation:
+    1. addition
+    2. substraction
+    3. multiplication
+    4. division
+    : """)
+
+if type_input.isdigit() and int(type_input) in OperationsList : 
+  type_input = int(type_input)
+  num1 = float(input("please insert first number: "))
+  num2 = float(input("please insert second number: "))
+else:
+  print("invalid input")
+
+if type_input == 1:
+  add(num1, num2)
+elif type_input == 2:
+  subst(num1, num2)
+elif type_input == 3:
+  mult(num1, num2)
+elif type_input == 4:
+  div(num1, num2)
+else:
+  print("""please choose the valid number 
+  to determine the type of the operation""")
